@@ -1,3 +1,7 @@
 Start: Mon, 2 Feb 2015 19:10:10 -0800
 End: Mon, 2 Feb 2015 23:16:10 -0800
 Tasks: testing debugging tools, can not make error report work, post question on Canvas, work on multtable function. learn how to use get function and can pass the parameter from Url to array in php.
+
+Start: Tue, 3 Feb 2015 19:30:00 -0800
+End: Tue, 3 Feb 2015 23:28:19 -0800
+Tasks: finished the multtable.php, start working on loopback.php

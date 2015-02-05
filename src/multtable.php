@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_All);
+error_reporting(E_ALL);
 ini_set('display_errors', 1);
 ?>
 <!DOCTYPE html>
@@ -10,6 +10,7 @@ ini_set('display_errors', 1);
 </head>
 <body>
 
+<h1>Multiplication Table</h1>
 <?php
 $stopFlag = false;
 $someInput = ($_GET);
