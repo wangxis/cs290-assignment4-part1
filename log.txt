@@ -10,6 +10,18 @@ Start: Wed, 4 Feb 2015 20:00:00 -800
 End: Thu, 5 Feb 2015 00:03:45 -0800
 Tasks: Finished the loopback.php, start working on the third part.
 
-Start: Fri. 6 Feb 2015 13:01:00 -0800
+Start: Fri, 6 Feb 2015 13:01:00 -0800
 End: Fri, 6 Feb 2015 18:15:17 -0800
 Tasks: Finished majority of login.php
+
+Start: Fri, 6 Feb 2015 21:31:00 -0800
+End: Sat, 7 Feb 2015 00:40:17 -0800
+Tasks: Working on redirect webpage of content1 and content2
+
+Start: Fri, 6 Feb 2015 13:01:00 -0800
+End: Fri, 6 Feb 2015 18:15:17 -0800
+Tasks: Finished majority of login.php
+
+Start: Sat, 7 Feb 2015 11:24:00 -0800
+End: Sat, 7 Feb 2015 13:09:38 -0800
+Tasks: Finished last part of login.php
