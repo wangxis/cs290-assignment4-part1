@@ -4,9 +4,6 @@ ini_set('display_errors', 1);
 header('Content-Type: text/html');
 
 session_start();
-if($_SERVER['REQUEST_METHOD'] != 'POST'){
-	header ("Location: login.php", true);
-} 
 if(session_status() == PHP_SESSION_ACTIVE){
 	$link = "login.php";
 	$loginLink = "login.php?action=end";
@@ -21,11 +18,21 @@ if(session_status() == PHP_SESSION_ACTIVE){
 			if (!isset($_SESSION['visits'])){
 				$_SESSION['visits'] = 0;
 			}
-			$_SESSION['visits']++;
+			if (!isset($_SESSION['open'])){
+				$_SESSION['open'] = 'yes';
+			}
 			echo "Hi $_SESSION[username], you have visited this page $_SESSION[visits] times. <br>";
 			echo "Click " . "<a href='".$loginLink."'>here</a>" . " to logout <br>";
 			echo "Click " . "<a href='".$linkContent2."'>here</a>" . " to content2.php \n";
+			$_SESSION['visits']++;
 		}
+	} else if (isset($_SESSION['open']) && $_SESSION['open'] == 'yes') {
+			echo "Hi $_SESSION[username], you have visited this page $_SESSION[visits] times. <br>";
+			echo "Click " . "<a href='".$loginLink."'>here</a>" . " to logout <br>";
+			echo "Click " . "<a href='".$linkContent2."'>here</a>" . " to content2.php \n";
+			$_SESSION['visits']++;
+		} else {
+		header ("Location: login.php");
 	}
 }
 ?>
@@ -33,7 +40,7 @@ if(session_status() == PHP_SESSION_ACTIVE){
 <html>
 <head>
   <meta charset="UTF-8"/>
-  <title>content2</title>
+  <title>content1</title>
 </head>
 <body>
 
